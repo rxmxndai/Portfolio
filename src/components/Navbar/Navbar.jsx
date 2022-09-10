@@ -1,12 +1,16 @@
 import './Navbar.css'
+import '../app.js'
 
 const Navbar = () => {
   return (
+    <div>
+      {/* Logo */}
     <nav className="navbar">
       <a href="#" className="nav-brand">
         Roman K
       </a>
 
+    {/* Nav Links */}
       <ul className="nav-menu">
         <li className="nav-item">
           <a href="#" className="nav-link"> Home </a>
@@ -27,13 +31,14 @@ const Navbar = () => {
 
 
       <div className="hamburger">
-        <span className="res-bar"> </span>
-        <span className="res-bar"> </span>
-        <span className="res-bar"> </span>
-        <span className="res-bar"> </span>
-        <span className="res-bar"> </span>
+        <span className="menu-bar"></span>
+        <span className="menu-bar"></span>
+        <span className="menu-bar"></span>
       </div>
+
     </nav>
+
+    </div>
   );
 };
 
