@@ -1,8 +1,15 @@
 import Navbar from './components/Navbar/Navbar'
+import styled from 'styled-components'
 
-function App() {
+const Container = styled.div`
+  height: 100vh;
+`
+
+function App() { 
   return (
-   <Navbar />
+    <Container>
+      <Navbar />
+    </Container>
   )
 }
 
