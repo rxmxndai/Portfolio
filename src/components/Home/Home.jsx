@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "./home.scss";
-import Profile from "../../imgs/profile.png";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -36,11 +35,6 @@ const Home = () => {
             </div>
           </div>
 
-          <p className="description">
-            I am a web developer specializing in react and node. I design and
-            develop websites and web application for wide range of customers. I
-            am interested in big data and software development.
-          </p>
         </div>
 
         <svg
