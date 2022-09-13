@@ -1,6 +1,7 @@
 import "./about.scss";
 import aboutPic from "../../imgs/about.png";
-// #59b256
+import { BiSend } from 'react-icons/bi';
+
 const About = () => {
   return (
     <div className="a" id="a">
@@ -29,6 +30,13 @@ const About = () => {
             working out in the gym and <span className="focus">learning </span> new things together.
           </p>
         </div>
+
+        <div className="btnContainer">
+          <button className="btnContact">
+            Download CV
+            <BiSend className="iconSend" />
+          </button>
+          </div>
       </div>
     </div>
   );

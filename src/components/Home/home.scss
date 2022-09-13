@@ -60,16 +60,16 @@
     align-items: center;
 }
 
-.btnContainer {
+.btnCon {
     height: 100px;
 }
 
-.btnContact {
+.btnC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 70px;
     border: 2px solid var(--Green);
     background-color: var(--Blue);;
     color: white;
@@ -78,21 +78,24 @@
     font-weight: bold;
     border-radius: 8px;
     gap: 10px;
+    font-size: 20px;
+    padding: 10px;
 }
 
-.iconSend {
+.iconS {
     font-size: 20px;
 }
 
-.btnContact:hover {
-    width:160px;
-    height: 60px;
+.btnC:hover {
+    width:200px;
+    height: 80px;
 
 }
 
 
 .img-bg {
-    clip-path: polygon(32% 0, 100% 0, 100% 50%, 100% 100%, 35% 100%, 0 42%);
+    // clip-path: polygon(32% 0, 100% 0, 100% 50%, 100% 100%, 35% 100%, 0 42%);
+    clip-path: polygon(52% 41%, 30% 41%, 30% 17%, 52% 17%, 52% 0, 100% 0, 100% 100%, 54% 100%, 0 100%, 0 69%, 52% 69%);
     background-color: var(--Green);
     position: absolute;
     top: 0;

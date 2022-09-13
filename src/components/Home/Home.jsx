@@ -35,10 +35,10 @@ const Home = () => {
               <div className="title-item"> Tech enthusiast </div>
             </div>
           </div>
-          <div className="btnContainer">
-          <button className="btnContact">
+          <div className="btnCon">
+          <button className="btnC">
             Contact me
-            <BiSend className="iconSend" />
+            <BiSend className="iconS" />
           </button>
           </div>
           

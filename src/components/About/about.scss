@@ -39,7 +39,9 @@
   width: 60%;
   height: 70vh;
   border-radius: 30px;
-  position: relative;
+  position: absolute;
+  top: 120px;
+  left: 120px;
   overflow: hidden;
 }
 
@@ -62,6 +64,41 @@
 .about0 {
     margin-bottom: 30px;
     font-size: 20px;
+}
+
+
+
+.btnContainer {
+  height: 100px;
+  
+}
+
+.btnContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 70px;
+  border: 2px solid var(--Green);
+  background-color: var(--Blue);;
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  gap: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.iconSend {
+  font-size: 30px;
+}
+
+.btnContact:hover {
+  width:240px;
+  height: 80px;
+
 }
 
 
