@@ -11,22 +11,22 @@ const About = () => {
         </div>
       </div>
 
-      <div className="right">
+      <div className="right" id="about">
         <h1 className="title">About Me</h1>
         <div className="desc">
-          <p className="about">
-            I am a student of Bsc(hons) in Computer Science in Herald College
+          <p className="about0">
+            I am a <span className="focus">student</span> of Bsc(hons) Computer Science at Herald College
             Kathmandu.
           </p>
-          <p className="about">
+          <p className="about0">
             I design and develop websites and web application. I can build webs
-            using popular frameworks like node js and react js. Lately, I am
+            using popular frameworks like  <span className="focus">node js</span> and <span className="focus">react js</span>. Lately, I am
             interested in big data.
           </p>
-          <p className="about">
-            I code on Java, JavaScript and C++ mainly. They can give me a wide
+          <p className="about0">
+            I code on Java,  <span className="focus">JavaScript</span> and C++ mainly. They can give me a wide
             scope for my interest and improvement. Besides tech stuff, I love
-            working out in the gym and learning new things.
+            working out in the gym and <span className="focus">learning </span> new things together.
           </p>
         </div>
       </div>

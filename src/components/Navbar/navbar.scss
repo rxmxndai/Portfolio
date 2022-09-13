@@ -1,3 +1,9 @@
+:root {
+  --Blue: #6e57e0;
+  --Green: #57e089;
+  --Dark: #191627;
+}
+
 .Container {
     position: fixed;
     top: 0;
@@ -15,7 +21,7 @@
 
 .Logo {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   color: inherit;
   cursor: pointer;
 }
@@ -43,11 +49,17 @@ a {
   color: gray;
 }
 
+
+
 .MenuItems {
     list-style: none;
     margin-right: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.active {
+  color: white;
 }
   
 

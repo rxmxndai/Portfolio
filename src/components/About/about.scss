@@ -1,3 +1,9 @@
+:root {
+  --Blue: #6e57e0;
+  --Green: #57e089;
+  --Dark: #191627;
+}
+
 .a {    
   display: flex;
   align-items: center;
@@ -26,7 +32,7 @@
   position: absolute;
   top: 50px;
   left: 50px;
-  background-color: #333;
+  background-color: var(--Blue);
 }
 
 .card {
@@ -43,14 +49,19 @@
   object-fit: cover;
 }
 
+.focus{
+  color: var(--Green);
+  font-weight: bold;
+}
 
 .title {
   font-weight: 600;
   margin-bottom: 50px;
 }
 
-.about {
-    margin-bottom: 20px;
+.about0 {
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 

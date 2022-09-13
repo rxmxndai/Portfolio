@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "./home.scss";
+import { BiSend } from 'react-icons/bi';
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -34,6 +35,13 @@ const Home = () => {
               <div className="title-item"> Tech enthusiast </div>
             </div>
           </div>
+          <div className="btnContainer">
+          <button className="btnContact">
+            Contact me
+            <BiSend className="iconSend" />
+          </button>
+          </div>
+          
 
         </div>
 

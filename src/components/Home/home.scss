@@ -1,9 +1,24 @@
+// Blue - #6e57e0
+// Green - #57e089
+// Dark - #191627
+
+:root {
+    --Blue: #6e57e0;
+    --Green: #57e089;
+    --Dark: #191627;
+  }
+
+  * {
+    background-color: var(--Dark);
+  }
+
 .wrapper-left {
     padding: 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    position: relative;
 }
 
 .intro {
@@ -40,15 +55,45 @@
     height: 50px;
     font-size: 30px;    
     font-weight: bold;
-    color: #59b256; 
+    color: var(--Green);
     display: flex;
     align-items: center;
+}
+
+.btnContainer {
+    height: 100px;
+}
+
+.btnContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--Green);
+    background-color: var(--Blue);;
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.iconSend {
+    font-size: 20px;
+}
+
+.btnContact:hover {
+    width:160px;
+    height: 60px;
+
 }
 
 
 .img-bg {
     clip-path: polygon(32% 0, 100% 0, 100% 50%, 100% 100%, 35% 100%, 0 42%);
-    background-color: green;
+    background-color: var(--Green);
     position: absolute;
     top: 0;
     right: 0;
@@ -63,11 +108,11 @@
     bottom: 30px;   
 }
 
-// .img {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     position: absolute;
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
     
-// }
+}
 
