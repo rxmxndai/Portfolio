@@ -1,8 +1,9 @@
-import GameDesc from '../../imgs/about.png'
-import GameHome from '../../imgs/GameHome.png'
-
 export const featuredProject = [
-
+    {   
+      id: 1,
+      title: "Game Recommendation System",
+      img:  "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameHome.png?raw=true"
+    }
   ];
   
   export const webAppProject = [
@@ -18,7 +19,7 @@ export const featuredProject = [
     {
       id: 1,
       title: "Game Recommendation System",
-      img:  {GameDesc}
+      img:  "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameHome.png?raw=true"
     }
   ];
   
