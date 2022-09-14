@@ -105,10 +105,11 @@ const Home = () => {
 
       <Right>
         <div className="img-bg"></div>
-        {/* <img src={Profile} alt="" className="img"/>  */}
+        {/* <img src={GameHome} alt="" className="img"/>  */}
       </Right>
     </Container>
   );
 };
+
 
 export default Home;

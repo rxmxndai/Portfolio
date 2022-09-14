@@ -20,8 +20,9 @@ function App() {
         <div className="sections">
           <Home />
           <About />
-          <Skills />
           <Project />
+          <Skills />
+          
         </div>
       </Container>
     </div>
