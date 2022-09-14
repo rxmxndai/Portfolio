@@ -27,7 +27,9 @@ const Home = () => {
         <div className="wrapper-left">
           <h2 className="intro">Hi, My name is </h2>
           <h1 className="name"> Roman Karki</h1>
+          I am a Freelance
           <div className="title">
+            
             <div className="title-wrapper">
               <div className="title-item"> Web Developer </div>
               <div className="title-item"> UI/UX Designer </div>
@@ -48,7 +50,7 @@ const Home = () => {
         <svg
           viewBox="0 0 75 75"
           fill="none"
-          stroke="green"
+          stroke="lightgreen"
           className="scroll"
           xmlns="http://www.w3.org/2000/svg"
         >

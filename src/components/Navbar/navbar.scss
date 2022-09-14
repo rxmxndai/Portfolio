@@ -22,16 +22,19 @@
 .Logo {
   font-size: 30px;
   font-weight: 500;
-  color: inherit;
+  color: var(--Blue);
   cursor: pointer;
+
+  span {
+    color: var(--Green);
+  }
 }
 
 
 .Right {
   display: flex;
-  width: 60%;
+  // width: 60%;
   align-items: center;
-  justify-content: end;
 }
 
 .Menu {
@@ -64,9 +67,9 @@ a {
   
 
 .Button {
-  border: 1px solid blue;
+  border: 1px solid var(--Green);
   padding: 10px 15px;
-  background-color: blue;
+  background-color: var(--Blue);
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;

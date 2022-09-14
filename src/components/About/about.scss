@@ -4,7 +4,7 @@
   --Dark: #191627;
 }
 
-.a {    
+.a {
   display: flex;
   align-items: center;
 }
@@ -24,15 +24,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  margin-right: 50px;
+  width: 100%;
 }
 
 .card.bg {
   position: absolute;
   top: 50px;
   left: 50px;
-  background-color: var(--Blue);
+  background-color: var(--Green);
 }
 
 .card {
@@ -45,32 +44,34 @@
   overflow: hidden;
 }
 
+.desc {
+  margin-right: 50px;
+}
+
 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.focus{
+.focus {
   color: var(--Green);
   font-weight: bold;
 }
 
 .title {
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .about0 {
-    margin-bottom: 30px;
-    font-size: 20px;
+  margin: 20px 0px;
+  font-size: 16px;
+
 }
-
-
 
 .btnContainer {
   height: 100px;
-  
 }
 
 .btnContact {
@@ -80,11 +81,10 @@
   width: 220px;
   height: 70px;
   border: 2px solid var(--Green);
-  background-color: var(--Blue);;
+  background-color: var(--Blue);
   color: white;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  font-weight: bold;
   border-radius: 8px;
   gap: 10px;
   font-size: 20px;
@@ -92,13 +92,101 @@
 }
 
 .iconSend {
-  font-size: 30px;
+  font-size: 25px;
+  background-color: var(--Blue);
 }
 
 .btnContact:hover {
-  width:240px;
+  width: 240px;
   height: 80px;
-
 }
 
+@media only screen and (max-width: 900px) {
+  .a {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
 
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card.bg {
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    background-color: var(--Blue);
+  }
+
+  .card {
+    width: 60%;
+    height: 70%;
+    border-radius: 20px;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .desc {
+    padding: 0px 50px;
+    margin: 0px;
+  }
+
+  .focus {
+    color: var(--Green);
+    font-weight: bold;
+  }
+
+  .title {
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .about0 {
+    margin: 8px;
+    font-size: 10px;
+  }
+
+  .btnContainer {
+    height: 80px;
+  }
+
+  .btnContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    border: 2px solid var(--Green);
+    background-color: var(--Blue);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 10%;
+    overflow: hidden;
+  }
+
+  .iconSend {
+    font-size: 14px;
+    background-color: var(--Blue);
+  }
+
+  .btnContact:hover {
+    display: none;
+  }
+}

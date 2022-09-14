@@ -1,10 +1,10 @@
 import "./about.scss";
 import aboutPic from "../../imgs/about.png";
-import { BiSend } from 'react-icons/bi';
+import { FiDownload } from 'react-icons/fi';
 
 const About = () => {
   return (
-    <div className="a" id="a">
+    <div className="a" id="about">
       <div className="left">
         <div className="card bg"></div>
         <div className="card">
@@ -12,7 +12,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="right" id="about">
+      <div className="right" >
         <h1 className="title">About Me</h1>
         <div className="desc">
           <p className="about0">
@@ -34,7 +34,7 @@ const About = () => {
         <div className="btnContainer">
           <button className="btnContact">
             Download CV
-            <BiSend className="iconSend" />
+            <FiDownload className="iconSend" />
           </button>
           </div>
       </div>

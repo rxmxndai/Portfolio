@@ -1,11 +1,11 @@
-import './skills.scss'
+import "./skills.scss";
 
 const Skills = () => {
   return (
-    <div className='skills' id="skills">
+    <div className="skills" id="skills">
       
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
