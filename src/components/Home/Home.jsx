@@ -22,7 +22,7 @@ const Right = styled.div`
 
 const Home = () => {
   return (
-    <Container id="home">
+    <Container className="home" id="home">
       <Left>
         <div className="wrapper-left">
           <h2 className="intro">Hi, My name is </h2>

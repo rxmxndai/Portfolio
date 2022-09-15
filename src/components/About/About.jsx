@@ -1,5 +1,5 @@
 import "./about.scss";
-import aboutPic from "../../imgs/about.png";
+import aboutPic from "../../assets/about.png";
 import { FiDownload } from 'react-icons/fi';
 
 const About = () => {

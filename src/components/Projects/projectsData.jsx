@@ -19,7 +19,13 @@ export const featuredProject = [
     {
       id: 1,
       title: "Game Recommendation System",
-      img:  "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameHome.png?raw=true"
+      img:  "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameDesc.png?raw=true"
+    },
+    {
+      id: 1,
+      title: "Game Recommendation System",
+      img:
+      "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameHome.png?raw=true",
     }
   ];
   
