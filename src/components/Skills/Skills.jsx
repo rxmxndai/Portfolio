@@ -1,39 +1,46 @@
 import "./skills.scss";
+import { useState } from "react";
 import Arrow from '../../assets/arrow.png'
-import mobileIcon from '../../assets/mobile.png'
-import GameSallah from "../../assets/GameSallah.png"
 
 const Skills = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const data = [
     {
       id: "1",
-      icon: {mobileIcon},
+      icon: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true',
       title: "Game Sallah ",
-      desc: "It is a web design of a game recommendation site 'Game Sallah'. It's goal is to recommend like games to users.",
-      img: {GameSallah},
+      desc: "It is a web-design of a game recommending site 'Game Sallah'. It's goal is to recommend games of their interest to the users.",
+      img: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true',
     },
     {
       id: "2",
-      icon: "../../assets/mobile.png",
-      title: "Game Sallah: Game recommendation site",
-      desc: "It is a web design of a game recommendation site 'Game Sallah'. It's goal is to recommend like games to users.",
-      img: "../../imgs/GameDesc.png",
+      icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
+      title: "Water Billing System",
+      desc: "It is a web application for a water service supplier. It has basic CRUD for customer's personal and billing information.",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
     },
     {
       id: "3s",
-      icon: "../../imgs/mobile.png",
+      icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
       title: "Game Sallah: Game recommendation site",
       desc: "It is a web design of a game recommendation site 'Game Sallah'. It's goal is to recommend like games to users..",
-      img: "../../imgs/GameDesc.png",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
     },
   ];
 
+
+  const handleClick = (way) => {  
+    way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide-1: 2):
+    setCurrentSlide(currentSlide < data.length-1? currentSlide+1: 0); 
+  }
 
 
 
   return (
     <div className="skills" id="skills">
-      <div className="slider">
+      <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
         {data.map( d => (
           <div className="container">
             <div className="item">
@@ -61,8 +68,8 @@ const Skills = () => {
         </div>
       
 
-      <img src={Arrow} className="arrow left" alt="" />
-      <img src={Arrow} className="arrow right" alt="" />
+      <img src={Arrow} className="arrow left" alt=""  onClick={() => handleClick('left')} />
+      <img src={Arrow} className="arrow right" alt="" onClick={() => handleClick()} />
     </div>
   );
 };

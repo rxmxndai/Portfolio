@@ -38,9 +38,9 @@
 
       .item {
         width: 700px;
-        height: calc(100% - 2px);
-        background-color: white;
-        border: 1px solid var(--Green);
+        height: calc(100% - 4px);
+        background-color: var(--Blue);
+        border: 2px solid var(--Green);
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -56,7 +56,7 @@
 
           .leftContainer {
             width: 90%;
-            height: 70%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -78,19 +78,16 @@
 
             h2 {
               font-size: 20px;
-              color: black;
             }
 
             p {
               font-size: 13px;
-              color: black;
             }
 
             span {
               font-size: 12px;
               font-weight: 600;
               text-decoration: underline;
-              color: black; 
             }
           }
         }

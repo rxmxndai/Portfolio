@@ -2,7 +2,7 @@ export const featuredProject = [
     {   
       id: 1,
       title: "Game Recommendation System",
-      img:  "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameHome.png?raw=true"
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
     }
   ];
   
@@ -19,13 +19,13 @@ export const featuredProject = [
     {
       id: 1,
       title: "Game Recommendation System",
-      img:  "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameDesc.png?raw=true"
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
+
     },
     {
       id: 1,
       title: "Game Recommendation System",
-      img:
-      "https://github.com/rxmxndai/Portfolio/blob/main/src/imgs/GameHome.png?raw=true",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameHome.png?raw=true",
     }
   ];
   
@@ -33,7 +33,6 @@ export const featuredProject = [
     {
       id: 1,
       title: "Course Management System",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameDesc.png?raw=true"
     }
   ];
