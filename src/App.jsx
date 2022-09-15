@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Project from "./components/Projects/Project";
+import Contacts from "./components/Contacts/Contacts";
 
 import styled from "styled-components";
 import "./app.scss"
@@ -20,8 +21,9 @@ function App() {
         <div className="sections">
           <Home />
           <About />
-          <Project />
           <Skills />
+          <Project />
+          <Contacts />
           
         </div>
       </Container>

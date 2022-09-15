@@ -1,35 +1,14 @@
-import styled from "styled-components";
 import "./home.scss";
-import { BiSend } from 'react-icons/bi';
-
-const Container = styled.div`
-  height: calc(100vh - 50px);
-  display: flex;
-`;
-
-const Left = styled.div`
-  flex: 1;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-`;
-
-const Right = styled.div`
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-`;
+import { BiSend } from "react-icons/bi";
 
 const Home = () => {
   return (
-    <Container className="home" id="home">
-      <Left>
+    <div className="home" id="home">
+      <div className="Left">
         <div className="wrapper-left">
           <h2 className="intro">Hi, My name is </h2>
-          <h1 className="name"> Roman Karki</h1>
-          I am a Freelance
+          <h1 className="name"> Roman Karki</h1>I am a Freelance
           <div className="title">
-            
             <div className="title-wrapper">
               <div className="title-item"> Web Developer </div>
               <div className="title-item"> UI/UX Designer </div>
@@ -38,13 +17,11 @@ const Home = () => {
             </div>
           </div>
           <div className="btnCon">
-          <button className="btnC">
-            Contact me
-            <BiSend className="iconS" />
-          </button>
+            <button className="btnC">
+              Contact me
+              <BiSend className="iconS" />
+            </button>
           </div>
-          
-
         </div>
 
         <svg
@@ -101,15 +78,14 @@ const Home = () => {
             </g>
           </g>
         </svg>
-      </Left>
+      </div>
 
-      <Right>
+      <div className="Right">
         <div className="img-bg"></div>
         {/* <img src={GameHome} alt="" className="img"/>  */}
-      </Right>
-    </Container>
+      </div>
+    </div>
   );
 };
-
 
 export default Home;
