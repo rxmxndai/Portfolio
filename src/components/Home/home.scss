@@ -43,7 +43,8 @@
         text-decoration: underline var(--Green);
 
         @include mobile {
-          font-size: 40px;
+          margin: 20px 0px;
+          font-size: 50px;
           margin-bottom: 30px;
         }
       }
@@ -81,7 +82,7 @@
             align-items: center;
 
             @include mobile {
-              font-size: 16px;
+              font-size: 25px;
             }
           }
         }

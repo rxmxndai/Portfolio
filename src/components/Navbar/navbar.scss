@@ -30,6 +30,10 @@
 
     .Right {
 
+      @include mobile {
+        display: none;
+      }
+
       .Menu {
         list-style: none;
         display: flex;
@@ -54,13 +58,5 @@
         }
       }
     }
-  }
-}
-
-
-
-@media only screen and (max-width: 969px) {
-  .Right {
-    display: none;
   }
 }

@@ -24,7 +24,7 @@ const Skills = () => {
     {
       id: "3s",
       icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
-      title: "Game Sallah: Game recommendation site",
+      title: "Game Sallah",
       desc: "It is a web design of a game recommendation site 'Game Sallah'. It's goal is to recommend like games to users..",
       img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
     },
@@ -54,7 +54,7 @@ const Skills = () => {
                   <h2>{d.title}</h2>
 
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span>Projects ></span>
                 </div>
 
                 <div className="rightContainer"></div>

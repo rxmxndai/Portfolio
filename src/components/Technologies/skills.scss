@@ -9,13 +9,13 @@
   h1 {
     font-size: 25px;
     font-weight: 600;
-    margin: 20px 0px;
+    margin: 50px 0px;
     color: white;
     text-decoration: underline var(--Green);
 
     @include mobile {
       font-size: 20px;
-      margin: 10px;
+      margin: 20px;
     }
     
   }
