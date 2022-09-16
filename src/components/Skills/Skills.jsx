@@ -1,77 +1,102 @@
+
 import "./skills.scss";
-import { useState } from "react";
-import Arrow from '../../assets/arrow.png'
+import SkillsList from "../skillsList/skillsList";
 
-const Skills = () => {
+import { useState, useEffect } from "react";
+import {
+  featuredSkills,
+  Languages,
+  Frameworks,
+  Others,
+  designTools
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+ 
+} from "./skillsData";
 
-  const data = [
+
+
+const Projects = () => {
+  const [active, setActive] = useState("featured");
+  const [data, setData] = useState([]);
+
+  const list = [
     {
-      id: "1",
-      icon: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true',
-      title: "Game Sallah ",
-      desc: "It is a web-design of a game recommending site 'Game Sallah'. It's goal is to recommend games of their interest to the users.",
-      img: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true',
+      id: "featuredSkills",
+      title: "Featured",
     },
     {
-      id: "2",
-      icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
-      title: "Water Billing System",
-      desc: "It is a web application for a water service supplier. It has basic CRUD for customer's personal and billing information.",
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
+      id: "frameworks",
+      title: "Framework"
     },
     {
-      id: "3s",
-      icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
-      title: "Game Sallah: Game recommendation site",
-      desc: "It is a web design of a game recommendation site 'Game Sallah'. It's goal is to recommend like games to users..",
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
+      id: "programmingLanguages",
+      title: "Programming",
     },
+    {
+      id: "designTools",
+      title: "Designing",
+    },
+    {
+      id: "others",
+      title: "Others",
+    },
+
   ];
 
+  useEffect(() => {
+    switch (active) {
+      case "featuredSkills":
+        setData(featuredSkills);
+        break;
 
-  const handleClick = (way) => {  
-    way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide-1: 2):
-    setCurrentSlide(currentSlide < data.length-1? currentSlide+1: 0); 
-  }
+      case "frameworks":
+        setData(Frameworks);
+        break;
 
+      case "programmingLanguages":
+        setData(Languages);
+        break;
 
+      case "others":
+        setData(Others);
+        break;
+
+      case "designTools":
+        setData(designTools);
+        break;
+
+      default:
+        setData(featuredSkills);
+    }
+  }, [active]);
 
   return (
     <div className="skills" id="skills">
-      <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
-        {data.map( d => (
-          <div className="container">
-            <div className="item">
-              <div className="left">
-                <div className="leftContainer">
-                  <div className="imageContainer">
-                    <img src={d.icon} alt="" />
-                  </div>
 
-                  <h2>{d.title}</h2>
+      <h1>Skills</h1>
 
-                  <p>{d.desc}</p>
-                  <span>Projects</span>
-                </div>
+      <ul>
+        {list.map((item) => (
+          <SkillsList
+            id={item.id}
+            title = {item.title}
+            active={active === item.id}
+            setActive={setActive}
+          />
+        ))}
+      </ul>
 
-                <div className="rightContainer"></div>
-              </div>
-              <div className="right">
-                <img src={d.img} alt="" />
-              </div>
-            </div>
+
+      <div className="container">
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" />
+            <h3>{d.title}</h3>
           </div>
         ))}
-
-        </div>
-      
-
-      <img src={Arrow} className="arrow left" alt=""  onClick={() => handleClick('left')} />
-      <img src={Arrow} className="arrow right" alt="" onClick={() => handleClick()} />
+      </div>
     </div>
   );
 };
 
-export default Skills;
+export default Projects;

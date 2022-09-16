@@ -1,5 +1,6 @@
 import "./contact.scss";
 import { useState } from "react";
+import bgWhite from "../../assets/bgWhite.png";
 
 const Contacts = () => {
 
@@ -15,7 +16,7 @@ const Contacts = () => {
   return (
     <div className="contact" id="contacts">
       <div className="left">
-        <img src="" alt="" />
+        <img src={bgWhite} alt="" />
       </div>
       <div className="right">
         <h2>Contacts</h2>

@@ -1,86 +1,79 @@
 import "./project.scss";
-import ProjectLists from "../ProjectList/ProjectLists";
-import { useState, useEffect } from "react";
-import {
-  featuredProject,
-  webAppProject,
-  webDesignProject,
-  othersProject,
-} from "./projectsData.jsx";
+import { useState } from "react";
+import Arrow from '../../assets/arrow.png'
 
+const Skills = () => {
 
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-const Projects = () => {
-  const [active, setActive] = useState("featured");
-  const [data, setData] = useState([]);
-
-  const list = [
+  const data = [
     {
-      id: "featured",
-      title: "Featured",
+      id: "1",
+      icon: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true',
+      title: "Game Sallah ",
+      desc: "It is a web-design of a game recommending site 'Game Sallah'. It's goal is to recommend games of their interest to the users.",
+      img: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true',
     },
     {
-      id: "webApp",
-      title: "Web App",
+      id: "2",
+      icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
+      title: "Water Billing System",
+      desc: "It is a web application for a water service supplier. It has basic CRUD for customer's personal and billing information.",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
     },
     {
-      id: "webDesigns",
-      title: "Web Designs",
-    },
-    {
-      id: "others",
-      title: "Others",
+      id: "3s",
+      icon: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true",
+      title: "Game Sallah: Game recommendation site",
+      desc: "It is a web design of a game recommendation site 'Game Sallah'. It's goal is to recommend like games to users..",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
     },
   ];
 
-  useEffect(() => {
-    switch (active) {
-      case "featured":
-        setData(featuredProject);
-        break;
 
-      case "webApp":
-        setData(webAppProject);
-        break;
+  const handleClick = (way) => {  
+    way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide-1: 2):
+    setCurrentSlide(currentSlide < data.length-1? currentSlide+1: 0); 
+  }
 
-      case "webDesigns":
-        setData(webDesignProject);
-        break;
 
-      case "others":
-        setData(othersProject);
-        break;
-
-      default:
-        setData(featuredProject);
-    }
-  }, [active]);
 
   return (
     <div className="projects" id="projects">
-      <h1>Projects</h1>
+      <h2 className="pageTitle">Projects</h2>
+      <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
+        {data.map( d => (
+          <div className="container">
+            <div className="item">
+              <div className="left">
+                <div className="leftContainer">
+                  <div className="imageContainer">
+                    <img src={d.icon} alt="" />
+                  </div>
 
-      <ul>
-        {list.map((item) => (
-          <ProjectLists
-            id={item.id}
-            title={item.title}
-            active={active === item.id}
-            setActive={setActive}
-          />
-        ))}
-      </ul>
+                  <h2>{d.title}</h2>
 
-      <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
+                  <p>{d.desc}</p>
+                  <span>Projects</span>
+                </div>
+
+                <div className="rightContainer"></div>
+              </div>
+              <div className="right">
+                <img src={d.img} alt="" />
+              </div>
+            </div>
           </div>
         ))}
-      </div>
+
+        </div>
+      
+
+      <img src={Arrow} className="arrow left" alt=""  onClick={() => handleClick('left')} />
+      <img src={Arrow} className="arrow right" alt="" onClick={() => handleClick()} />
     </div>
   );
 };
 
-export default Projects;
+export default Skills;
+
