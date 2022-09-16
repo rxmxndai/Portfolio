@@ -1,16 +1,26 @@
-import JavaScript from '../../assets/javascript.png'
-
 export const featuredSkills = [
     {   
       id: 1,
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900"
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/javascript.png?raw=true"
+    },
+    {   
+      id: 2,
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/html.png?raw=true"
+    },
+    {   
+      id: 2,
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/css.png?raw=true"
     }
   ];
   
   export const Frameworks = [
     {
       id: 1,
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/node.png?raw=true",
+    }, 
+    {
+      id: 2,
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/react.png?raw=true",
     }
   ];
   
@@ -18,19 +28,19 @@ export const featuredSkills = [
   export const Languages = [
     {
       id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/cpp.png?raw=true",
 
     },
     {
       id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameHome.png?raw=true",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/javascript.png?raw=true",
     }
   ];
   
   export const designTools = [
     {
       id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameDesc.png?raw=true"
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/figma.png?raw=true"
     }
   ];
 
@@ -38,6 +48,6 @@ export const featuredSkills = [
   export const Others = [
     {
       id: 1,
-      img: {JavaScript}
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/figma.png?raw=true"
     }
   ]
