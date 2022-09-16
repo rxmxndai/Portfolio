@@ -5,21 +5,17 @@ export const featuredSkills = [
     },
     {   
       id: 2,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/html.png?raw=true"
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/node.png?raw=true"
     },
     {   
       id: 2,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/css.png?raw=true"
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/react.png?raw=true"
     }
   ];
   
-  export const Frameworks = [
+  export const Frontend = [
     {
       id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/node.png?raw=true",
-    }, 
-    {
-      id: 2,
       img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/react.png?raw=true",
     }
   ];
@@ -28,16 +24,21 @@ export const featuredSkills = [
   export const Languages = [
     {
       id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/cpp.png?raw=true",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/javascript.png?raw=true",
 
     },
     {
-      id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/javascript.png?raw=true",
-    }
+      id: 2,
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/cpp.png?raw=true",
+    },
+    {
+      id: 3,
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/java.png?raw=true",
+    },
+
   ];
   
-  export const designTools = [
+  export const UIUX = [
     {
       id: 1,
       img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/figma.png?raw=true"
@@ -45,9 +46,13 @@ export const featuredSkills = [
   ];
 
 
-  export const Others = [
+  export const Backend = [
     {
       id: 1,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/figma.png?raw=true"
-    }
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/node.png?raw=true"
+    },
+    {
+      id: 2,
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/express.png?raw=true",
+    },
   ]

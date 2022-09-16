@@ -6,17 +6,15 @@ import { useState, useEffect } from "react";
 import {
   featuredSkills,
   Languages,
-  Frameworks,
-  Others,
-  designTools
-
- 
+  Frontend,
+  UIUX,
+  Backend 
 } from "./skillsData";
 
 
 
 const Projects = () => {
-  const [active, setActive] = useState("featured");
+  const [active, setActive] = useState("featuredSkills");
   const [data, setData] = useState([]);
 
   const list = [
@@ -25,22 +23,21 @@ const Projects = () => {
       title: "Featured",
     },
     {
-      id: "frameworks",
-      title: "Framework"
+      id: "frontend",
+      title: "Frontend"
+    },
+    {
+      id: "backend",
+      title: "Backend",
+    },
+    {
+      id: "uiux",
+      title: "UI/UX",
     },
     {
       id: "programmingLanguages",
       title: "Programming",
-    },
-    {
-      id: "designTools",
-      title: "Designing",
-    },
-    {
-      id: "others",
-      title: "Others",
-    },
-
+    }
   ];
 
   useEffect(() => {
@@ -49,20 +46,19 @@ const Projects = () => {
         setData(featuredSkills);
         break;
 
-      case "frameworks":
-        setData(Frameworks);
+      case "frontend":
+        setData(Frontend);
         break;
 
       case "programmingLanguages":
         setData(Languages);
         break;
 
-      case "others":
-        setData(Others);
+      case "uiux":
+        setData(UIUX);
         break;
-
-      case "designTools":
-        setData(designTools);
+      case "backend":
+        setData(Backend);
         break;
 
       default:
@@ -73,7 +69,7 @@ const Projects = () => {
   return (
     <div className="skills" id="skills">
 
-      <h1>Skills</h1>
+      <h1>Technologies</h1>
 
       <ul>
         {list.map((item) => (
