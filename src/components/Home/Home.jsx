@@ -1,12 +1,13 @@
 import "./home.scss";
 import { BiSend } from "react-icons/bi";
+import "../../index.scss";
 
 const Home = () => {
   return (
     <div className="home" id="home">
-      <div className="Left">
-        <div className="wrapper-left">
-          <h2 className="intro">Hi, My name is </h2>
+      <div className="left">
+        <div className="intro">
+          <h2 className="short">Hi, My name is </h2>
           <h1 className="name"> Roman Karki</h1>I am a Freelance
           <div className="title">
             <div className="title-wrapper">
@@ -80,7 +81,7 @@ const Home = () => {
         </svg>
       </div>
 
-      <div className="Right">
+      <div className="right">
         <div className="img-bg"></div>
         {/* <img src={GameHome} alt="" className="img"/>  */}
       </div>
