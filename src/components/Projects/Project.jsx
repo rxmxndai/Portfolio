@@ -54,7 +54,7 @@ const Skills = () => {
                   <h2>{d.title}</h2>
 
                   <p>{d.desc}</p>
-                  <span>Projects ></span>
+                  <span>Projects</span>
                 </div>
 
                 <div className="rightContainer"></div>
