@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import "../../app.scss";
 
 .home {
   display: flex;
@@ -40,6 +40,7 @@
 
       .name {
         font-size: 60px;
+        text-decoration: underline var(--Green);
 
         @include mobile {
           font-size: 40px;

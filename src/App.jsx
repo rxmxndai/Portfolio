@@ -1,21 +1,16 @@
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
+import Skills from "./components/Technologies/Skills";
 import Project from "./components/Projects/Project";
 import Contacts from "./components/Contacts/Contacts";
 
-import styled from "styled-components";
 import "./app.scss"
-
-const Container = styled.div`
-  height: 100vh;
-`;
 
 function App() {
   return (
     <div className="app">
-      <Container>
+      <div>
         <Navbar />
 
         <div className="sections">
@@ -26,7 +21,7 @@ function App() {
           <Contacts />
           
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

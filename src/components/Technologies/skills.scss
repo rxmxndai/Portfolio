@@ -1,3 +1,6 @@
+@import "../../app.scss";
+
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -8,6 +11,12 @@
     font-weight: 600;
     margin: 20px 0px;
     color: white;
+    text-decoration: underline var(--Green);
+
+    @include mobile {
+      font-size: 20px;
+      margin: 10px;
+    }
     
   }
 
@@ -16,6 +25,12 @@
     padding: 0;
     list-style: none;
     display: flex;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px 0px;
+    }
   }
 
   .container {
@@ -25,9 +40,13 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @include mobile {
+      width: 100%;
+    }
+
     .item {
-      width: 220px;
-      height: 220px;
+      width: 180px;
+      height: 180px;
       border-radius: 20px;
       margin: 10px 20px;
       display: flex;
@@ -37,6 +56,11 @@
       position: relative;
       transition: all 0.5s ease-in-out;
       cursor: pointer;
+
+      @include mobile {
+        width: 120px;
+        height: 120px;
+      }
 
       img {
         width: 100%;

@@ -1,6 +1,5 @@
 import "./home.scss";
 import { BiSend } from "react-icons/bi";
-import "../../index.scss";
 
 const Home = () => {
   return (

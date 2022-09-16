@@ -19,14 +19,13 @@ const About = () => {
             Kathmandu.
           </p> {"\n"}
           <p className="about0">
-            I design and develop websites and web application. I can build webs
+            I can design and build webs
             using popular frameworks like  <span className="focus">node js</span> and <span className="focus">react js</span>. Lately, I am
             interested in big data.
           </p>
           <p className="about0">
-            I code on Java,  <span className="focus">JavaScript</span> and C++ mainly. They can give me a wide
-            scope for my interest and improvement. Besides tech stuff, I love
-            working out in the gym and <span className="focus">learning </span> new things together.
+            I code on Java,  <span className="focus">JavaScript</span> and C++ mainly. Besides tech stuff, I love
+            working out and <span className="focus">learning </span> new things together.
           </p>
         </div>
 

@@ -1,3 +1,14 @@
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}
+
+
+
 :root {
   --Blue: #6e57e0;
   --Green: #57e089;
@@ -26,7 +37,6 @@
       width: 100vw;
       height: calc(100vh - 70px);
       scroll-snap-align: start;
-      scroll-behavior: smooth;
     }
   }
 }

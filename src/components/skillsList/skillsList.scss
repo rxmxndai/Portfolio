@@ -1,8 +1,16 @@
+@import '../../app.scss';
+
 .projectList {
     margin-right: 50px;
     padding: 10px;
     border-radius: 10px;
+    font-weight: 400;
     cursor: pointer;
+
+    @include mobile {
+      margin-right: 20px;
+      font-weight: 100;
+    }
 
     &.active {
       background-color: var(--Blue);

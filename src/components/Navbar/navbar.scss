@@ -1,9 +1,8 @@
-@import "../../index.scss";
+@import "../../app.scss";
 
 .Container {
   display: flex;
   flex-direction: column-reverse;
-  background-color: black;
   height: 70px;
   width: 100%;
   position: fixed;

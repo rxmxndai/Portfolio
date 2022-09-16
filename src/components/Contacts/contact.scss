@@ -1,5 +1,8 @@
+@import "../../app.scss";
+
 .contact {
     display: flex;
+    background-image: url('../../assets/bgWhite.png');
 
     .left {
         flex:1;

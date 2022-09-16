@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import "../../app.scss";
 
 .about {
   display: flex;
@@ -67,6 +67,8 @@
       margin-bottom: 70px;
       font-size: 25px;
       font-weight: 600;
+      text-decoration: underline var(--Green);
+
       @include mobile {
         font-size: 20px;
         margin-bottom: 20px;
@@ -85,6 +87,8 @@
 
         @include mobile {
           font-size: 12px;
+          font-weight: 300px;
+          padding: 5px;
         }
 
         span {
