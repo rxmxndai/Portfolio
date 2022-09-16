@@ -5,10 +5,12 @@ const Navbar = () => {
     <div className="navbar" id="navbar">
       <div className="Container">
         <div className="Wrapper">
+          
           <h1 className="Logo">
             {" "}
             Port<span>folio</span>
           </h1>
+
           <div className="Right">
             <ul className="Menu">
               <li className="MenuItems">
@@ -30,6 +32,10 @@ const Navbar = () => {
               <li className="MenuItems">
                 {" "}
                 <a href="#skills"> Skills </a>{" "}
+              </li>
+              <li className="MenuItems">
+                {" "}
+                <a href="#contacts"> Contacts </a>{" "}
               </li>
             </ul>
           </div>

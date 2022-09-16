@@ -13,7 +13,7 @@ const Contacts = () => {
 
   }
   return (
-    <div className="contact" id="contact">
+    <div className="contact" id="contacts">
       <div className="left">
         <img src="" alt="" />
       </div>
