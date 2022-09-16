@@ -1,189 +1,146 @@
-.a {
-  display: flex;
-  align-items: center;
+@import "../../index.scss";
 
-
-  .left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-  }
-  
-  .right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-}
-
-
-
-.card.bg {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  background-color: var(--Green);
-}
-
-.card {
-  width: 60%;
-  height: 70vh;
-  border-radius: 30px;
-  position: absolute;
-  top: 120px;
-  left: 120px;
-  overflow: hidden;
-}
-
-.desc {
-  margin-right: 50px;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.focus {
-  color: var(--Green);
-  font-weight: bold;
-}
-
-.title {
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.about0 {
-  margin: 20px 0px;
-  font-size: 16px;
-
-}
-
-.btnContainer {
-  height: 100px;
-}
-
-.btnContact {
+.about {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 70px;
-  border: 2px solid var(--Green);
-  background-color: var(--Blue);
-  color: white;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  border-radius: 8px;
-  gap: 10px;
-  font-size: 20px;
-  padding: 10px;
-}
 
-.iconSend {
-  font-size: 25px;
-  background-color: var(--Blue);
-}
-
-.btnContact:hover {
-  width: 240px;
-  height: 80px;
-}
-
-@media only screen and (max-width: 900px) {
-  .a {
-    display: flex;
+  @include mobile {
     flex-direction: column;
-    margin: 0px;
   }
 
   .left {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex: 0.5;
+    position: relative;
+
+    @include mobile {
+      flex: 0.3;
+    }
+
+    .card.bg {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background-color: var(--Green);
+
+      @include mobile {
+        top: 0px;
+        left: 50px;
+      }
+    }
+
+    .card {
+      width: 60%;
+      height: 60vh;
+      border-radius: 30px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      overflow: hidden;
+
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include mobile {
+        height: 80%;
+        top: 20px;
+        left: 70px;
+      }
+    }
   }
 
   .right {
+    flex: 0.5;
     display: flex;
     flex-direction: column;
-  }
-
-  .card.bg {
-    position: absolute;
-    top: 5vh;
-    left: 10vw;
-    background-color: var(--Blue);
-  }
-
-  .card {
-    width: 60%;
-    height: 70%;
-    border-radius: 20px;
-    position: absolute;
-    top: 10vh;
-    left: 20vw;
-  }
-
-  .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .desc {
-    padding: 0px 50px;
-    margin: 0px;
-  }
-
-  .focus {
-    color: var(--Green);
-    font-weight: bold;
-  }
-
-  .title {
-    font-weight: 300;
-    margin-bottom: 10px;
-  }
-
-  .about0 {
-    margin: 8px;
-    font-size: 10px;
-  }
-
-  .btnContainer {
-    height: 80px;
-  }
-
-  .btnContact {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 50px;
-    border: 2px solid var(--Green);
-    background-color: var(--Blue);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 10px;
-    padding: 10%;
-    overflow: hidden;
-  }
+    justify-content: center;
+    padding: 20px 50px;
 
-  .iconSend {
-    font-size: 14px;
-    background-color: var(--Blue);
-  }
+    @include mobile {
+      flex: 0.6;
+    }
 
-  .btnContact:hover {
-    display: none;
+    .title {
+      margin-bottom: 70px;
+      font-weight: 600;
+      font-size: 30px;
+      font-weight: 600;
+      @include mobile {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .desc {
+      align-items: center;
+      justify-content: center;
+
+      .about0 {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        word-break: normal;
+        width: fit-content;
+
+        @include mobile {
+          font-size: 12px;
+        }
+
+        span {
+          color: var(--Green);
+          font-weight: bold;
+        }
+      }
+    }
+
+    .btnContainer {
+      margin-top: 30px;
+      height: 70px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+      }
+
+      .btnContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 90%;
+        border: 2px solid var(--Green);
+        background-color: var(--Blue);
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        border-radius: 10px;
+        gap: 10px;
+
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px;
+
+        @include mobile {
+          font-size: 14px;
+          font-weight: 400;
+          padding: 0px;
+        }
+
+        &:hover {
+          width: 155px;
+          height: 95%;
+        }
+
+        .iconSend {
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
