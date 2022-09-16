@@ -53,6 +53,6 @@ export const featuredSkills = [
     },
     {
       id: 2,
-      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/express.png?raw=true",
+      img: "https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mongodb.png?raw=true",
     },
   ]
