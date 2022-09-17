@@ -1,76 +1,124 @@
 @import "../../app.scss";
 
-.contact {
+.contacts {
+  position: relative;
+
+  .contact-bg {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+  }
+
+  .wrapper {
+    padding: 50px;
     display: flex;
-    background-image: url('../../assets/bgWhite.png');
 
     .left {
-        flex:1;
-        overflow: hidden;
+      flex: 1;
+      .title {
+        font-size: 60px;
+        width: 80%;
+      }
 
-        img {
-            height: 100%; 
+      .info {
+        .info-item {
+          display: flex;
+          align-items: center;
+          margin: 50px 0;
+          font-weight: 300;
+          width: 50%;
+
+          .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+          }
         }
-    }   
+      }
+    }
 
     .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .desc {
+        font-weight: 200;
+      }
+
+      form {
+        margin-top: 20px;
         
-
-        h2 {
-            font-size: 30px;
+        input {
+          width: 50%;
+          height: 50px;
+          border: none;
+          border-bottom: 1px solid var(--Green);
+          margin: 10px 0px;
+          font-size: 14px;
+          padding-left: 10px;
+          color: black;
+          
         }
 
-        form {
-            width: 70%;
-            height: 70%;
+        textarea {
+          width: 100%;
+          resize: none;
+          margin: 10px 0px;
+          font-size: 14px;
+          padding-left: 10px;
+          color: black;
+        }
+
+        .btnCon {
+          margin: 10px 0px;
+          height: 70px;
+          width: 190px;
+  
+          @include mobile {
+            margin-top: 50px;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            height: 50px;
+            width: 100%;
+          }
+  
+          .btnC {
+            display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-around;
-
-
-            input {
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
+            width: 120px;
+            height: 70%;
+            border: 2px solid var(--Green);
+            background-color: var(--Blue);
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            border-radius: 10px;
+            gap: 10px;
+  
+            font-size: 16px;
+            font-weight: 600;
+            padding: 5px;
+  
+            @include mobile {
+              font-size: 14px;
+              font-weight: 400;
+              padding: 0px;
             }
-
-
-            textarea {
-                width: 300px;
-                height: 200px;
-                font-size: 14px;;
+  
+            &:hover {
+              width: 70%;
+              height: 80%;
             }
-
-            button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: var(--Blue);
-                border: 1px solid var(--Green);
-                border-radius: 10px;
-                font-weight: 500;
-                cursor: pointer;
-                
-                &:focus {
-                    outline: none;
-                }
+  
+            .iconS {
+              font-size: 16px;
             }
-
-            span {
-                color: var(--Green);
-            }
-
-
+          }
         }
-    
-    
-    }   
-    
-
+      }
+    }
+  }
 }
