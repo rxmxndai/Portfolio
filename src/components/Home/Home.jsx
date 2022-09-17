@@ -2,6 +2,7 @@ import "./home.scss";
 import { BiSend } from "react-icons/bi";
 
 const Home = () => {
+
   return (
     <div className="home" id="home">
       <div className="left">

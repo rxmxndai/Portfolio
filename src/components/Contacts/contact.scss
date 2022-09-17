@@ -3,24 +3,47 @@
 .contacts {
   position: relative;
 
-  .contact-bg {
-    width: 30px;
-    height: 100%;
-    position: absolute;
-  }
-
   .wrapper {
     padding: 50px;
     display: flex;
 
+    @include mobile {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+
     .left {
       flex: 1;
+      @include mobile {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
       .title {
         font-size: 60px;
         width: 80%;
+
+        @include mobile {
+          width: 100%;
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: 300;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+        }
       }
 
       .info {
+
+        @include mobile {
+          padding: 10px 0px;
+        }
+        
         .info-item {
           display: flex;
           align-items: center;
@@ -28,9 +51,37 @@
           font-weight: 300;
           width: 50%;
 
+          @include mobile {
+            margin: 20px 0px;
+            width: 100%;
+            font-weight: 200;
+          }
+
           .icon {
             width: 30px;
             height: 30px;
+            margin-right: 20px;
+
+
+            @include mobile {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+
+
+      .links {
+        width: 80%;
+        
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 50px;
+          cursor: pointer;
+
+          @include mobile {
             margin-right: 20px;
           }
         }
@@ -45,13 +96,23 @@
       justify-content: center;
 
       .desc {
-        font-weight: 200;
+        font-weight: 200; 
+
+        @include mobile {
+          display: none;
+        }
       }
 
       form {
         margin-top: 20px;
-        
-        input {
+
+        @include mobile {
+          margin-top: 0px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .input {
           width: 50%;
           height: 50px;
           border: none;
@@ -60,7 +121,15 @@
           font-size: 14px;
           padding-left: 10px;
           color: black;
-          
+
+          @include mobile {
+            width: 35%;
+            height: 40px;
+            margin: 10px;
+            margin-left: 0px;
+            font-size: 14px;
+            padding-left: 10px;
+          }
         }
 
         textarea {
@@ -76,15 +145,15 @@
           margin: 10px 0px;
           height: 70px;
           width: 190px;
-  
+
           @include mobile {
-            margin-top: 50px;
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             height: 50px;
             width: 100%;
           }
-  
+
           .btnC {
             display: flex;
             justify-content: center;
@@ -97,22 +166,22 @@
             cursor: pointer;
             border-radius: 10px;
             gap: 10px;
-  
+
             font-size: 16px;
             font-weight: 600;
             padding: 5px;
-  
+
             @include mobile {
               font-size: 14px;
               font-weight: 400;
               padding: 0px;
             }
-  
+
             &:hover {
               width: 70%;
               height: 80%;
             }
-  
+
             .iconS {
               font-size: 16px;
             }
