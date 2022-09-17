@@ -1,11 +1,5 @@
 import "./contact.scss";
 import { BiSend } from "react-icons/bi";
-import Phone from "../../assets/phone.png";
-import Mail from "../../assets/mail.png";
-import Address from "../../assets/address.png";
-import Github from "../../assets/github.png";
-import Messenger from "../../assets/messenger.png";
-import linkedin from "../../assets/linkedin.png";
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -42,34 +36,34 @@ const Contacts = () => {
           <h1 className="title">Contact me</h1>
           <div className="info">
             <div className="info-item">
-              <img src={Phone} alt="" className="icon" />
+              <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/phone.png?raw=true" alt="" className="icon" />
               +978 9816860874
             </div>
 
             <div className="info-item">
-              <img src={Mail} alt="" className="icon" />
+              <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/mail.png?raw=true" alt="" className="icon" />
               k.romann413@gmail.com
             </div>
 
             <div className="info-item">
-              <img src={Address} alt="" className="icon" />
+              <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/address.png?raw=true" alt="" className="icon" />
               Mandikhatar, Kathmandu
             </div>
 
             <div className="links">
               <a href="https://github.com/rxmxndai" target="_blank">
-                <img src={Github} alt="github" />
+                <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/github.png?raw=true" alt="github" />
               </a>
               <a
               
                 href="https://www.facebook.com/messages/t/100013434455527"
                 target="_blank"
               >
-                <img src={Messenger} alt="linkedin" />
+                <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/messenger.png?raw=true" alt="linkedin" />
               </a>
               <a href="https://www.linkedin.com/in/roman-karki-bb3338241/"
                  target="_blank">
-                <img src={linkedin} alt="messenger" />
+                <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/linkedin.png?raw=true" alt="messenger" />
               </a>
             </div>
           </div>

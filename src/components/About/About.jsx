@@ -1,5 +1,4 @@
 import "./about.scss";
-import aboutPic from "../../assets/about.png";
 import { FiDownload } from 'react-icons/fi';
 
 const About = () => {
@@ -8,7 +7,7 @@ const About = () => {
       <div className="left">
         <div className="card bg"></div>
         <div className="card">
-          <img src={aboutPic} alt="" className="img" />
+          <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/about.png?raw=true" alt="" className="img" />
         </div>
       </div>
       <div className="right" >

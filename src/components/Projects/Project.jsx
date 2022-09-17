@@ -1,6 +1,5 @@
 import "./project.scss";
 import { useState } from "react";
-import Arrow from '../../assets/arrow.png'
 
 const Skills = () => {
 
@@ -12,7 +11,7 @@ const Skills = () => {
       icon: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/mobile.png?raw=true',
       title: "Game Sallah ",
       desc: "It is a web-design of a game recommending site 'Game Sallah'. It's goal is to recommend games of their interest to the users.",
-      img: 'https://github.com/rxmxndai/Portfolio/blob/main/src/assets/GameSallah.png?raw=true',
+      img: 'https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/GameSallah.png?raw=true',
     },
     {
       id: "2",
@@ -69,8 +68,8 @@ const Skills = () => {
         </div>
       
 
-      <img src={Arrow} className="arrow left" alt=""  onClick={() => handleClick('left')} />
-      <img src={Arrow} className="arrow right" alt="" onClick={() => handleClick()} />
+      <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/arrow.png?raw=true" className="arrow left" alt=""  onClick={() => handleClick('left')} />
+      <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/arrow.png?raw=true" className="arrow right" alt="" onClick={() => handleClick()} />
     </div>
   );
 };
