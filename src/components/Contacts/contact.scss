@@ -2,9 +2,10 @@
 
 .contacts {
   position: relative;
+  
 
   .wrapper {
-    padding: 50px;
+    padding: 10px 50px;
     display: flex;
 
     @include mobile {
