@@ -108,8 +108,7 @@ const Contacts = () => {
               </button>
             </div>
 
-            {send && "Submitted ! Thank you..."}
-            {!send && "SORRY, working on secured email rn."}
+           <p> {send ? "Submitted ! Thank you..." : "SORRY, working on secured email rn."} </p>
           </form>
         </div>
       </div>
