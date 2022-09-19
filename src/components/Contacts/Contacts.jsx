@@ -2,7 +2,7 @@ import "./contact.scss";
 import { BiSend } from "react-icons/bi";
 
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
   const [send, setSend] = useState(false);
@@ -11,22 +11,22 @@ const Contacts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ahf2cir",
-        "template_3ge1ifs",
-        formRef.current,
-        "CHybQzL71zjlLO8mY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSend(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_ahf2cir",
+    //     "template_3ge1ifs",
+    //     formRef.current,
+    //     "CHybQzL71zjlLO8mY"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setSend(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (
@@ -56,7 +56,7 @@ const Contacts = () => {
               </a>
               <a
               
-                href="https://www.facebook.com/messages/t/100013434455527"
+                href="https://www.messenger.com/t/100013434455527/"
                 target="_blank"
               >
                 <img src="https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/messenger.png?raw=true" alt="linkedin" />
@@ -101,14 +101,15 @@ const Contacts = () => {
               name="user_message"
             ></textarea>
 
-            <div className="btnCon">
-              <button type="submit" className="btnC">
+            <div className="btnCon"  > 
+              <button type="submit" className="btnC" >
                 Send
                 <BiSend className="iconS" />
               </button>
             </div>
 
             {send && "Submitted ! Thank you..."}
+            {!send && "SORRY, working on secured email rn."}
           </form>
         </div>
       </div>
