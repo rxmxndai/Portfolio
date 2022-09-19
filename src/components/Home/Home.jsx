@@ -17,13 +17,19 @@ const Home = () => {
               <div className="title-item"> Tech enthusiast </div>
             </div>
           </div>
+
+          <a href="#contacts"> 
           <div className="btnCon">
-            <button className="btnC">
-              Contact me
+            <button className="btnC" >
+               Contact me 
               <BiSend className="iconS" />
             </button>
           </div>
+
+          </a> 
         </div>
+
+        
 
         <svg
           viewBox="0 0 75 75"
