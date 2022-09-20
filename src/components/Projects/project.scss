@@ -19,7 +19,7 @@
 
     @include mobile {
       font-size: 20px;
-      top: 05px;
+      top: 20px;
     }
   }
 
@@ -111,7 +111,7 @@
                 width: 25px;
                 
                 @include mobile {
-                  width: 15px;
+                  width: 12px;
                 }
               }
             }
@@ -120,13 +120,13 @@
               font-size: 20px;
 
               @include mobile {
-                font-style: 12px;
+                font-style: 10px;
                 font-weight: 200;
               }
             }
 
             p {
-              font-size: 13px;
+              font-size: 8px;
 
               @include mobile {
                 display: none;

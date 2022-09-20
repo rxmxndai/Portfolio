@@ -3,22 +3,22 @@ export const featuredSkills = [
     {   
       id: 1,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/javascript.png?raw=true",
-      title: "JavaScript"
+      title: "60%"
     },
     {   
       id: 2,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/node.png?raw=true",
-      title: "Node JS"
+      title: "40%"
     },
     {   
       id: 3,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/react.png?raw=true",
-      title: "React"
+      title: "30%"
     },
     {   
       id: 4,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/figma.png?raw=true",
-      title: "Figma"
+      title: "60%"
     }
   ];
   
@@ -26,17 +26,17 @@ export const featuredSkills = [
     {
       id: 1,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/react.png?raw=true",
-      title: "React"
+      title: "30%"
     },
     {
       id: 2,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/html.png?raw=true",
-      title: "HTML5"
+      title: "70%"
     },
     {
       id: 3,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/css.png?raw=true",
-      title: "CSS3"
+      title: "40%"
     }
   ];
   
@@ -45,18 +45,18 @@ export const featuredSkills = [
     {
       id: 1,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/javascript.png?raw=true",
-      title: "JavaScript"
+      title: "60%"
 
     },
     {
       id: 2,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/cpp.png?raw=true",
-      title: "C++ (DSA)"
+      title: "70%"
     },
     {
       id: 3,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/java.png?raw=true",
-      title: "Java (oop)"
+      title: "60%"
     },
 
   ];
@@ -65,12 +65,12 @@ export const featuredSkills = [
     {
       id: 1,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/figma.png?raw=true",
-      title: "Figma"
+      title: "60%"
     },
     {
       id: 2,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/balsamiq.png?raw=true",
-      title: "Balsamiq"
+      title: "70%"
     }
   ];
 
@@ -79,12 +79,12 @@ export const featuredSkills = [
     {
       id: 1,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/node.png?raw=true",
-      title: "Node JS"
+      title: "40%"
 
     },
     {
       id: 2,
       img: "https://github.com/rxmxndai/rxmxndai-assets/blob/main/assets/mongodb.png?raw=true",
-      title: "Mongo DB"
+      title: "60%"
     },
   ]
